@@ -20278,7 +20278,7 @@ body {
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
-  background: #A11F14;
+  background: #EDEFF0;
   overflow-x: hidden;
 }
 body * {
@@ -20965,7 +20965,7 @@ body a:hover {
   width: 100%;
 }
 .app .app-footer.app-footer-default {
-  background: #252a3c;
+  background: #35383C;
   color: #80909A;
   font-size: 13px;
 }
@@ -21678,13 +21678,13 @@ body a:hover {
 .app .app-navigation-horizontal {
   float: left;
   width: 100%;
-  background: #2D3349;
+  background: #A11F14 ;
   position: relative;
 }
 .app .app-navigation-horizontal nav > ul {
   float: left;
   width: 100%;
-  margin: 0px 0px 60px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0px;
   list-style: none;
   padding: 10px 0px 0px 10px;
@@ -21697,7 +21697,7 @@ body a:hover {
   float: left;
   padding: 10px 20px 12px 15px;
   line-height: 20px;
-  color: #C5D1CD;
+  color: #FFF;
   text-decoration: none;
   font-size: 11px;
   font-weight: 700;
@@ -21724,7 +21724,7 @@ body a:hover {
   font-size: 14px;
 }
 .app .app-navigation-horizontal nav > ul > li > a:hover {
-  color: #FFF;
+  color: #C5D1CD;
 }
 .app .app-navigation-horizontal nav > ul > li > ul {
   position: absolute;
