@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>                        
@@ -15,7 +17,10 @@
         <link rel="stylesheet" href="css/styles.css">
          <link rel="stylesheet" href="css/styles2.css">
         <!-- EOF CSS INCLUDE -->
-    </head>
+        
+            
+        </head>
+        
         
     <body>        
         
@@ -64,17 +69,17 @@
                     </ul>              
                 </div>
                 <!-- END APP HEADER  -->
-    
+               
                 <!-- START APP CONTENT -->
                 <div class="app-content">
                     <div class="app-navigation-horizontal">
                         <nav>
                             <ul>
-                                <li >
+                                <li class="active" >
                                     <a href="dashboard.html"><span class="icon-laptop-phone"></span> Dashboard</a>
                                     
                                 </li>
-                                <li class="active">
+                                <li >
                                     <a href="fc.html"><span class="icon-user"></span>Faculty Council</a>                
                                    
                                 </li>
@@ -88,47 +93,112 @@
                                 </li>
                             </ul>
                         </nav>
-               
+                        
+                              
                 </div>
-        
-                         <!-- START PAGE HEADING -->
-                    
-                    <div class="app-heading-container app-heading-bordered bottom">
-                        <ul class="breadcrumb">
-                            <li><a href="dashboard.html">Dashboard</a></li>
-                            <li class="active"><a href="#">Faculty Council</a></li>
-                            
-                        </ul>
-                    </div>
-                    
-                    
-                      <div class="container">
-
+                <!-- END APP CONTENT -->
+                        
+                     
                      
                         
-                        <div class="block block-condensed">
-                            <!-- START HEADING -->
-                            <div class="app-heading app-heading-small">
+                         <div class="block block-condensed">
+                             
+                              <div class="  ">
+                                       <div class="">
+                               
                                 
-                            </div>
-                            <!-- END HEADING -->
+                                <ul class="breadcrumb">
+                                    
+                                        <li><a href="dashboard.html">Dashboard</a></li>
+                                       <li><a href="fc.html">Fc Meeting</a></li>
+                                       <li class="active"><a href="addfc.html">Meeting</a></li>
                             
-                            <div class="block-content">
-                                
-                                <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                        </ul>
+                            </div> 
+                                  
+                                       
+                                    </div>
+                                 
+                            
+                             <div class="container ">
+
+                                   
+                                        
+                                          <form style="padding-right:80px;" class="form-horizontal">
+                                          <div class="row">
+                                         <div class="col-md-6">
+                                            
+                                            
+                                           
+                                              
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Term</label>
+                                                
+                                                <div class="col-md-9">
+                                                   <p class="form-control-static">2016-2020</p>
+                                                </div>
+                                            </div>
+                                            
+                                             <div class="form-group">
+                                                <label class="col-md-3 control-label">Date</label>
+                                                <div class="col-md-9">
+                                                     <p class="form-control-static">2016-11-19</p>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                             <div class="form-group">
+                                                <label class="col-md-3 control-label">Place</label>
+                                                <div class="col-md-9">
+                                                    <div class="btn-group bootstrap-select bs-select">
+                                                        
+                                                        
+                                                       <select aria-hidden="true" tabindex="-1" class="s2-select form-control select2-hidden-accessible" disabled="">
+                                                        <option></option>
+                                                                            
+                                                       </select>
+                                                 <span style="width: 296px;" dir="ltr" class="select2 select2-container select2-container--default select2-container--disabled select2-container--focus"><span class="selection"><span aria-labelledby="select2-ufgy-container" tabindex="-1" class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false"><span title="Lorem ipsum dolor" id="select2-ufgy-container" class="select2-selection__rendered">C3-Room 112</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>   
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                        
+                                            
+                                        </div>
+                                        
+                                        
+                                       
+                                      
+                                       
+                                    </div>
+                                    
+                                    
+                                       
+                            
+                                    
+                                </form>
+                                 <br/>   <br/> <br/> 
+                                     <div class="app-overlay"></div>
+                                    <div>
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a aria-expanded="true" href="#tabs-1" data-toggle="tab">Points</a></li>
+                                            <li class=""><a aria-expanded="false" href="#tabs-2" data-toggle="tab">Atachments</a></li>
+                                            <li class=""><a aria-expanded="false" href="#tabs-3" data-toggle="tab">Invitations</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane" id="tabs-1">
+                                    
+                                                <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
                                     
                                     
                                     <div class="row margin-bottom-20">
                                      
                                         
-                                        <div class="col-xs-2  pull-right">
-                                                <a href="addfc.html" class="btn btn-info  "><span class="fa fa-user-plus"></span> Add Faculty Council</a>
+                                        <div class="col-xs-2 ">
+                                                <a href="addfc.html" class="btn btn-info  "><span class="fa fa-user-plus"></span> Add Points</a>
                                             </div>
-                                        
-                                        <!--
-                                        <div class="col-xs-2 pull-right">
-                                                <button class="btn btn-info btn-block btn-icon-fixed  "><span class="fa fa-user-plus"></span> Import Fc</button>
-                                            </div> -->
                                     
                                     </div>
                                 <div class="row">
@@ -156,18 +226,21 @@
                                     
                                     
                                     
-                                <div class="row">
+                                   
+                                                <div class="row">
                                 <div class="col-sm-12">
                                 <table aria-describedby="DataTables_Table_1_info" role="grid" id="DataTables_Table_1" class="table table-striped table-bordered datatable-extended dataTable no-footer">
                                     <thead>
                                         <tr role="row">
-                                            <th aria-sort="descending" aria-label="" style="width: 43px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting_desc">#</th>
+                                            <th aria-sort="descending" aria-label="" style="width: 43px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting_desc">ID</th>
                                             <th aria-label="" style="width: 143px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Dean Name</th>
                                             <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Dean Surname</th>
                                             
                                           
                                             
-                                            <th aria-label="" style="width: 200px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Start to End Term</th>
+                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Title</th>
+                                             <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Group</th>
+                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Prensent</th>
                                             
                                          <th aria-label="" style="width: 100px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">. . . </th>
                                              <th style="width: 20%;">Actions</th>
@@ -185,55 +258,33 @@
                                             <td>Michael </td>
                                             
                                             
-                                            <td>2016/01/12 - 2020/01/12</td>
-                                            <td></td>
+                                            <td>Title here</td>
+                                            <td>Group here</td>
+                                            <td>Present here</td>
+                                             <td> </td>
                                           <td>
-                                                <button class="btn btn-default btn-info">Fc Details</button>
-                                                  <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
+                                                <button class="btn btn-default btn-info">Point Details</button>
+                                                 <button class="btn btn-default btn-danger " onclick="swal('You are removing a row!!');">Remove</button>
                                             </td>
                                         </tr>
                                         
-                                        
-                                        
-                                        <tr class="even" role="row">
+                                        <tr class="odd" role="row">
                                         <td class="sorting_1">2</td>
                                             <td class="">John </td>
-                                            <td>Adam</td>
-                                           
-                                           <td>2016/01/12 - 2020/01/12</td>
+                                            <td>Michael </td>
                                             
-                                            <td></td>
-                                            <td>
-                                                <button class="btn btn-default btn-info">Fc Details</button>
-                                              
-                                                        <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
-                                                    
-                                            </td>
-                                        </tr><tr class="odd" role="row">
-                                        <td class="sorting_1">3</td>
-                                            <td class="">John </td>
-                                            <td>Adam</td>
-                                           
                                             
-                                            <td>2016/01/12 - 2020/01/12</td>
-                                          <td></td>
-                                            <td>
-                                                <button class="btn btn-default btn-info">Fc Details</button>
-                                               <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
-                                            </td>
-                                        </tr><tr class="even" role="row">
-                                          <td class="sorting_1">4</td>
-                                            <td class="">Michael</td>
-                                            <td>Adam</td>
-                                           
-                                            <td>2016/01/12 - 2020/01/12</td>
-                                          <td></td>
-                                            <td>
-                                                <button class="btn btn-default btn-info">Fc Details</button>
-                                                <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
+                                            <td>Title here</td>
+                                            <td>Group here</td>
+                                            <td>Present here</td>
+                                             <td> </td>
+                                          <td>
+                                                <button class="btn btn-default btn-info">Point Details</button>
+                                                 <button class="btn btn-default btn-danger " onclick="swal('You are removing a row!!');">Remove</button>
                                             </td>
                                         </tr>
                                         
+                                      
                                        
                                         
                                     
@@ -264,40 +315,38 @@
                                 
                                 
                                 </div>
-                                
-                            </div>
+                                            </div>
                             
+                                            </div>
+                                            <div class="tab-pane active" id="tabs-2">
+                                              
+                                            <div class="tab-pane" id="tabs-3">
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            
+
+
+
+
+
+
+
+
+                    
+                      
                         </div>
-        
-                    </div> 
-                    
-                    
-                    
-                    
-                    
-                    
-                    <!-- END PAGE HEADING -->     
-       
+                        
+                        
+                        
                     </div>
-                        <!-- END APP CONTENT -->                                                                            
+                                                                                                  
                   <div class="app-overlay"></div>
         
-            <div class="app-footer app-footer-default" id="footer">
-                
-                <div class="container container-boxed">
-                    <div class="app-footer-line">
-                        <div class="copyright">© 2016 Politechnika Wrocławska Council Meeting Application (CoMA) . All right reserved</div>
-                        <div class="pull-right">
-                            <ul class="list-inline">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Help</a></li>
-                                <li><a href="#">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+           
         
            
             </div>
@@ -305,48 +354,10 @@
                 
         </div>
             
- <!-- MODAL  -->
-            <div style="display: none;" class="modal fade" id="modal-button" tabindex="-1" role="dialog">                        
-                <div class="modal-dialog" role="document">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="icon-cross"></span></button>
-
-                    <div class="modal-content">                        
-                        <div class="modal-body">
-                            
-                            <div class="">                                
-                                <div class="title">
-                                    
-                                </div>
-                            </div>                                                        
-                            
-                           
-                                <div class="form-group pull-center">
-                                    <div class="row ">
-                                        <div class="col-md-12 ">
-                                            <h1>&nbsp;Are you sure to delete Mr. John Michael?</h1>                                    
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="row">
-                                       
-                                        
-                                     <div class="modal-footer">
-                            <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-default">I am sure.</button>
-                        </div>
-                                    </div>
-                                                              
-                    
-                                                        
-                        </div>                        
-                    </div>
-                </div>            
-            </div>
-            <!-- END MODAL  -->
+      
         
-       
+         
+        
         
         <!-- IMPORTANT SCRIPTS -->
         <script type="text/javascript" src="js/vendor/jquery/jquery.min.js"></script>
@@ -356,8 +367,7 @@
         <script type="text/javascript" src="js/vendor/customscrollbar/jquery.mCustomScrollbar.min.js"></script>
         <!-- END IMPORTANT SCRIPTS -->
         <!-- THIS PAGE SCRIPTS -->
-        <script type="text/javascript" src="js/vendor/bootstrap-select/bootstrap-select.js"></script>      
-         <script type="text/javascript" src="js/vendor/sweetalert/sweetalert.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap-select/bootstrap-select.js"></script>        
         <!-- END THIS PAGE SCRIPTS -->
         <!-- APP SCRIPTS -->
         <script type="text/javascript" src="js/app.js"></script>
@@ -366,3 +376,8 @@
         <!-- END APP SCRIPTS -->
     </body>
 </html>
+
+
+
+
+
