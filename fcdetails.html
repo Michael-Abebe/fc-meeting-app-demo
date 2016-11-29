@@ -109,30 +109,69 @@
                         <div class="block block-condensed">
                             <!-- START HEADING -->
                             <div class="app-heading app-heading-small">
+                                <div class="col-md-6">
+                                            
+                                            <div class="listing">
+                                                
+                                       
+                                                <div class="listing-item margin-bottom-20">
+                                                    <div class="col-md-8 col-sm-8">
+                                                        <strong>Term:</strong><br>
+                                                    <div class="col-md-9">
+                                                   <p class="form-control-static">2016-2020</p>
+                                                </div>  
+                                                    </div>
+                                                    
+                                                   
+                                                  <div class="col-md-4 col-sm-4">
+                                                        
+                                                        <a href="#" class="btn btn-primary btn-clean" data-toggle="modal" data-target="#modal-password">Edit</a>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                <div class="listing-item">
+                                                    <div class="col-md-8 col-sm-8">
+                                                        <strong>Dean Name & Surname:</strong><br>
+                                                    <div class="col-md-9">
+                                                   <p class="form-control-static">Name & Surname</p>
+                                                </div>  
+                                                    </div>
+                                                   <div class="col-md-4 col-sm-4">
+                                                        <!--<a class="btn btn-default btn-icon"><span class="fa fa-pencil" data-toggle="modal" data-target="#modal-password"></span></a>-->
+                                                        <a href="#" class="btn btn-primary btn-clean" data-toggle="modal" data-target="#modal-ed">Edit</a>
+                                                    </div>
+                                                </div>
+                                                
+                                               
+                                            </div>
+                                            
+                                        </div>
                                 
-                            </div>
-                            <!-- END HEADING -->
+                                
+                                
+                              
                             
                             <div class="block-content">
-                                
-                                <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
+                            
+                         
+                            <!-- END START HEADING -->
+                            
+                         <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
                                     
                                     
                                     <div class="row margin-bottom-20">
                                      
                                         
-                                        <div class="col-xs-2  pull-right">
-                                                <a href="addfc.html" class="btn btn-info  "><span class="fa fa-user-plus"></span> Add Faculty Council</a>
-                                            </div>
                                         
-                                        <!--
-                                        <div class="col-xs-2 pull-right">
-                                                <button class="btn btn-info btn-block btn-icon-fixed  "><span class="fa fa-user-plus"></span> Import Fc</button>
-                                            </div> -->
                                     
                                     </div>
                                 <div class="row">
                                    
+                              
                                     
                                 <div class="col-sm-6">
                                     
@@ -143,34 +182,67 @@
                                 </div>
                                 </div>
                                     
+                                   
+                                   
+                                    
                                     
                                 <div class="col-sm-6">
                                     
                                 <div class="dataTables_filter" id="DataTables_Table_1_filter">
                                 <label>Search:<input aria-controls="DataTables_Table_1" placeholder="" class="form-control" type="search"></label>
                                     
-                                    <button class="btn btn-default btn-icon"><span class="icon-printer"></span></button>
-                                </div>
+                                <button class="btn btn-default btn-icon"><span class="icon-printer"></span></button>
                                 </div>
                                 </div>
                                     
+                               <!-- <div class="col-sm-12 pull-right"> <div class="input-group-btn open col-sm-3">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Search by title <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#"></a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    
+                                                    <li role="separator" class="divider"></li>
+                                               
+                                                </ul>
+                                     </div> </div>     -->     
+                                   
                                     
                                     
-                                <div class="row">
+                                </div>
+                             
+                                   
+                                    
+                                    
+                                   
+                                                <div class="row filterable">
                                 <div class="col-sm-12">
-                                <table aria-describedby="DataTables_Table_1_info" role="grid" id="DataTables_Table_1" class="table table-striped table-bordered datatable-extended dataTable no-footer">
+                                <table id="myTable" aria-describedby="DataTables_Table_1_info" role="grid" class="table table-striped table-bordered datatable-extended dataTable no-footer">
                                     <thead>
                                         <tr role="row">
-                                            <th aria-sort="descending" aria-label="" style="width: 43px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting_desc">#</th>
-                                            <th aria-label="" style="width: 143px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Dean Name</th>
-                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Dean Surname</th>
+                                            
+                                            
+                                            <th aria-sort="descending" aria-label="" style="width: 43px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0">ID</th>
+                                            
+                                             <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0">Title &nbsp;&nbsp; <input id="myInput" onkeyup="myFunction()" placeholder="Filter for Titles" title="Type in a name" type="text">
+                                                                                
+                                            </th>
+                                            
+                                           
+                                            
+                                            <!-- <select class="form-control"  type="text"  onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"><option value="title1" id="myInput">title1</option><option value="title2" >title 2</option><option value="title3">title 3</option><option value="title4">title 4</option></select>-->
+                                            
+                                            <th aria-label="" style="width: 143px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0">Dean Name</th>
+                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0">Dean Surname</th>
                                             
                                           
                                             
-                                            <th aria-label="" style="width: 200px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Start to End Term</th>
+                                           
+                                             <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0">Group</th>
+                                          
                                             
-                                         <th aria-label="" style="width: 100px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">. . . </th>
-                                             <th style="width: 20%;">Actions</th>
+                                         <th aria-label="" style="width: 100px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0">. . . </th>
+                                             <th style="width: 90px;">Actions</th>
+                                            
                                         
                                         
                                         </tr>
@@ -180,61 +252,89 @@
                                         
                                                 
                                     <tr class="odd" role="row">
-                                        <td class="sorting_1">1</td>
+                                        <td>1</td>
+                                          <td>title1</td>
                                             <td class="">John </td>
                                             <td>Michael </td>
                                             
                                             
-                                            <td>2016/01/12 - 2020/01/12</td>
-                                            <td></td>
+                                          
+                                            <td>Group here</td>
+                                            
+                                             <td> </td>
                                           <td>
-                                                <a href="fcdetails.html" class="btn btn-default btn-info">Fc Details</a>
-                                                  <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
+                                               
+                                                 <button class="btn btn-default btn-danger " onclick="swal('You are removing a row!!');">Delete</button>
                                             </td>
                                         </tr>
                                         
-                                        
-                                        
-                                        <tr class="even" role="row">
+                                        <tr class="odd" role="row">
                                         <td class="sorting_1">2</td>
+                                              <td>title2</td>
                                             <td class="">John </td>
-                                            <td>Adam</td>
-                                           
-                                           <td>2016/01/12 - 2020/01/12</td>
+                                            <td>Michael </td>
                                             
-                                            <td></td>
-                                            <td>
-                                                <a href="fcdetails.html" class="btn btn-default btn-info">Fc Details</a>
-                                              
-                                                        <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
-                                                    
-                                            </td>
-                                        </tr><tr class="odd" role="row">
-                                        <td class="sorting_1">3</td>
-                                            <td class="">John </td>
-                                            <td>Adam</td>
-                                           
                                             
-                                            <td>2016/01/12 - 2020/01/12</td>
-                                          <td></td>
-                                            <td>
-                                                <a href="fcdetails.html" class="btn btn-default btn-info">Fc Details</a>
-                                               <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
-                                            </td>
-                                        </tr><tr class="even" role="row">
-                                          <td class="sorting_1">4</td>
-                                            <td class="">Michael</td>
-                                            <td>Adam</td>
-                                           
-                                            <td>2016/01/12 - 2020/01/12</td>
-                                          <td></td>
-                                            <td>
-                                                <a href="fcdetails.html" class="btn btn-default btn-info">Fc Details</a>
-                                                <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
+                                          
+                                            <td>Group here</td>
+                                            
+                                             <td> </td>
+                                          <td>
+                                               
+                                                 <button class="btn btn-default btn-danger " onclick="swal('You are removing a row!!');">Delete</button>
                                             </td>
                                         </tr>
                                         
+                                       <tr class="odd" role="row">
+                                        <td>3</td>
+                                              <td>title3</td>
+                                            <td class="">John </td>
+                                            <td>Michael </td>
+                                            
+                                            
+                                          
+                                            <td>Group here</td>
+                                            
+                                             <td> </td>
+                                          <td>
+                                               
+                                                 <button class="btn btn-default btn-danger " onclick="swal('You are removing a row!!');">Delete</button>
+                                            </td>
+                                        </tr>
                                        
+                                         <tr class="odd" role="row">
+                                        <td class="sorting_1">4</td>
+                                              <td>title3</td>
+                                            <td class="">John </td>
+                                            <td>Michael </td>
+                                            
+                                            
+                                          
+                                            <td>Group here</td>
+                                            
+                                             <td> </td>
+                                          <td>
+                                               
+                                                 <button class="btn btn-default btn-danger " onclick="swal('You are removing a row!!');">Delete</button>
+                                            </td>
+                                        </tr>
+                                        
+                                         <tr class="odd" role="row">
+                                        <td class="sorting_1">5</td>
+                                              <td>title3</td>
+                                            <td class="">John </td>
+                                            <td>Michael </td>
+                                            
+                                            
+                                          
+                                            <td>Group here</td>
+                                            
+                                             <td> </td>
+                                          <td>
+                                                
+                                                 <button class="btn btn-default btn-danger " onclick="swal('You are removing a row!!');">Delete</button>
+                                            </td>
+                                        </tr>
                                         
                                     
                                     
@@ -242,7 +342,12 @@
                                     
                                     
                                     
-                                </table></div></div>
+                                </table>
+                                                    
+                                            
+                                          
+                                                    
+                                                    </div></div>
                                     <div class="row">
                                         <div class="col-sm-5">
                                             <div aria-live="polite" role="status" id="DataTables_Table_1_info" class="dataTables_info">Showing 1 to 10 of 30 entries</div>
@@ -264,6 +369,11 @@
                                 
                                 
                                 </div>
+                            
+                       
+                            
+                            
+                      
                                 
                             </div>
                             
@@ -345,7 +455,14 @@
                 </div>            
             </div>
             <!-- END MODAL  -->
-        
+        <script> $('#rowSelectAll').on('switch-change', function (e, data) {
+    var $el = $(data.el)
+      , value = data.value;
+        $('.toggle-state-switch').each(function( index ) {
+      $(this).bootstrapSwitch('setState' , value);
+    });
+});
+               </script>
        
         
         <!-- IMPORTANT SCRIPTS -->
@@ -356,8 +473,15 @@
         <script type="text/javascript" src="js/vendor/customscrollbar/jquery.mCustomScrollbar.min.js"></script>
         <!-- END IMPORTANT SCRIPTS -->
         <!-- THIS PAGE SCRIPTS -->
+        
+        
+        <script src="js/vendor/summernote/summernote.min.js"></script>
+        <script type="text/javascript" src="js/descr.js"></script>
+        <script type="text/javascript" src="js/vendor/sweetalert/sweetalert.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery/jqr.js"></script>
+        <script type="text/javascript" src="js/filter.js"></script>
         <script type="text/javascript" src="js/vendor/bootstrap-select/bootstrap-select.js"></script>      
-         <script type="text/javascript" src="js/vendor/sweetalert/sweetalert.min.js"></script>
+       
         <!-- END THIS PAGE SCRIPTS -->
         <!-- APP SCRIPTS -->
         <script type="text/javascript" src="js/app.js"></script>

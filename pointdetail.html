@@ -102,10 +102,10 @@
                                
                                 
                                 <ul class="breadcrumb">
-                                     <h2>Adding Faculty Council</h2>
+                                     <h2>Point Details</h2>
                             <li><a href="dashboard.html">Dashboard</a></li>
-                            <li><a href="fc.html">Faculty Council</a></li>
-                            <li class="active"><a href="addfc.html">Add Faculty Council</a></li>
+                            <li><a href="meeting.html">FC Meeting</a></li>
+                            <li class="active"><a href="pointdetail.html">Point Details</a></li>
                             
                         </ul>
                             </div>
@@ -118,16 +118,17 @@
                                         <div class="col-md-6">
                                             
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label"> Dean Name</label>
+                                                <label class="col-md-3 control-label"> Point Title:</label>
                                                 <div class="col-md-9">
                                                     <input class="form-control" value="Name" type="text">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label">Dean Surname</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control" value="Surname" type="text">
-                                                </div>
+                                                <label class="col-md-3 control-label">Description:</label>
+                                                <div class="col-md-9">                                        
+                                                          
+                                                    <textarea class="form-control" rows="5"></textarea>
+                                                        </div>
                                             </div>
                                             
                                             
@@ -139,16 +140,16 @@
                                            
                                             
                                              <div class="form-group">
-                                                <label class="col-md-3 control-label">Dean Title</label>
+                                                <label class="col-md-3 control-label">Category:</label>
                                                 <div class="col-md-9">
                                                     <div class="btn-group bootstrap-select bs-select">
                                                         
                                                         
-                                                        <select tabindex="-98" class="bs-select" name="title">                                                        
-                                                        <option value="1" selected="">Title 1</option>
-                                                        <option value="2">Title 1</option>
-                                                        <option value="4">Title 1</option>
-                                                        <option value="3">Title 1</option>
+                                                        <select tabindex="-98" class="bs-select" name="catg">                                                        
+                                                        <option value="1" selected="">Select Category</option>
+                                                        <option value="2">Category 1</option>
+                                                        <option value="4">Category 2</option>
+                                                        <option value="3">Category 3</option>
                                                     </select></div>
                                                 </div>
                                             </div>
@@ -157,46 +158,36 @@
                                         <div class="col-md-6">
                                             
                                             <div class="form-group">
-                                                <label class="col-md-3 control-label">Faculty</label>
+                                                <label class="col-md-3 control-label">Final Agenda:</label>
                                                 <div class="col-md-9">
                                                     <div class="btn-group bootstrap-select bs-select">
                                                         
                                                         
                                                         <select tabindex="-98" class="bs-select" name="facl">                                                        
-                                                        <option value="1" selected="">W1</option>
-                                                        <option value="2">W2</option>
-                                                        <option value="4">W3</option>
-                                                        <option value="3">W4</option>
+                                                        <option value="1" selected=""></option>
+                                                        <option value="2">Yes</option>
+                                                        <option value="4">No</option>
+                                                      
                                                     </select></div>
                                                 </div>
                                             </div>
                                                                                         
-                                            <div class="form-group">
-                                                <label class="col-md-3 control-label">Start Date</label>
-                                                
+                                             <div class="form-group">
+                                                <label class="col-md-3 control-label"> Point Owner:</label>
                                                 <div class="col-md-9">
-                                                  <div class="input-group bs-datepicker">
-                                                 <input class="form-control" type="text">
-                                                   <span class="input-group-addon ">
-                                                  <span class="icon-calendar-full"></span>
-                                                 </span>
-                                                   </div>
+                                                    <input class="form-control" value="owner" type="text">
                                                 </div>
-                                      
-                                            </div>   
-                                              <div class="form-group">
-                                                <label class="col-md-3 control-label">End Date</label>
-                                                
-                                                <div class="col-md-9">
-                                                  <div class="input-group bs-datepicker">
-                                                 <input class="form-control" type="text">
-                                                   <span class="input-group-addon ">
-                                                  <span class="icon-calendar-full"></span>
-                                                 </span>
-                                                   </div>
-                                                </div>
-                                      
-                                            </div>  
+                                            </div>
+                                            
+                                            
+                                             <div class="form-group">
+                                    <label class="col-md-3 control-label">Point Attachment:</label>
+                                    <div class="col-md-9">
+                                             <a href="#" class="file-input btn btn-default">
+                                            
+                                            <input class="file" type="file"></a><span class="file-input-name"></span>
+                                    </div>
+                                </div>
                                                                               
                                             
                                         </div>
@@ -212,43 +203,11 @@
                                       <div class="block-content">
                                 
                                 <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="DataTables_Table_1_wrapper">
-                                    <div class="row">
-                                     
-                                    
                                    
-                                        <div class="col-md-12 text-right">
-                                            <a href="fc.html" class="btn btn-info ">Add Members</a>
-                                            &nbsp;&nbsp;
-                                              <a href="import.html" class="btn btn-info ">Import FC Members</a>
-                                        </div>
-                                        
-                
-                                    </div>
                                    
-                                  <h2 class="col-md-3 text-left ">Members</h2>
+                                  <h2 class="col-md-3 text-left ">Voting</h2>
                                
-                              <!--  <div class="col-sm-6">
-                                    
-                                <div id="DataTables_Table_1_length" class="dataTables_length">
-                                    
-                                    
-                                <label>Show <select class="form-control" aria-controls="DataTables_Table_1" name="DataTables_Table_1_length"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label>
-                                </div>
-                                </div>-->
-                                    
-                                    
-                               <!-- <div class="col-sm-6">
-                                    
-                                <div class="dataTables_filter" id="DataTables_Table_1_filter">
-                                <label>Search:<input aria-controls="DataTables_Table_1" placeholder="" class="form-control" type="search"></label>
-                                    
-                                    <button class="btn btn-default btn-icon"><span class="icon-printer"></span></button>
-                                </div>
-                                </div>-->
-                                    
-                              
-                                    
-                                    
+                
                                     
                                 <div class="row">
                                 <div class="col-sm-12">
@@ -256,14 +215,16 @@
                                     <thead>
                                         <tr role="row">
                                             <th aria-sort="descending" aria-label="" style="width: 43px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting_desc">#</th>
-                                           <th aria-label="" style="width: 143px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Title</th>
+                                           <th aria-label="" style="width: 170px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Voting Description</th>
                                             
-                                            <th aria-label="" style="width: 143px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting"> Name</th>
-                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting"> Surname</th>
+                                            <th aria-label="" style="width: 120px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting"> No Entitled</th>
+                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting"> Valid Votes</th>
                                 
-                                             <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Email</th>
+                                             <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Yes</th>
+                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">No</th>
+                                            <th aria-label="" style="width: 99px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">Hold</th>
                                          <th aria-label="" style="width: 100px;" colspan="1" rowspan="1" aria-controls="DataTables_Table_1" tabindex="0" class="sorting">. . . </th>
-                                             <th style="width: 15%;">Actions</th>
+                                             <th style="width: 19%;">Actions</th>
                                         
                                         
                                         </tr>
@@ -274,92 +235,31 @@
                                                 
                                     <tr class="odd" role="row">
                                         <td class="sorting_1">1</td>
-                                        <td class="">Title </td>
-                                            <td class="">John </td>
-                                            <td>Michael </td>
+                                        <td class="">Description </td>
+                                            <td class="">entitled </td>
+                                            <td>valid votes </td>
                                             
                                             
-                                            <td>sample@gmail.com</td>
+                                            <td>yes</td>
+                                         <td>no</td>
+                                         <td>hold</td>
                                             <td></td>
                                           <td>
                                                
-                                                  <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
-                                            </td>
-                                        </tr>
-                                        
-                                        
-                                         <tr class="odd" role="row">
-                                       
-                                        <td class="sorting_1">2</td>
-                                        <td class="">Title </td>
-                                            <td class="">John </td>
-                                            <td>Michael </td>
-                                            
-                                            
-                                            <td>sample@gmail.com</td>
-                                            <td></td>
-                                          <td>
-                                               
+                                               <a href="" class="btn btn-default btn-info"> Details</a>
                                                   <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
                                             </td>
                                         </tr>
                                       
-                                        
-                                        <tr class="odd" role="row">
-                                       
-                                        <td class="sorting_1">3</td>
-                                        <td class="">Title </td>
-                                            <td class="">John </td>
-                                            <td>Michael </td>
-                                            
-                                            
-                                            <td>sample@gmail.com</td>
-                                            <td></td>
-                                          <td>
-                                               
-                                                  <button class="btn btn-default btn-danger" data-toggle="modal" data-target="#modal-button">Remove</button>
-                                            </td>
-                                        </tr>
-                                        
-                                    
                                     
                                     </tbody>
                                     
                                     
                                     
                                 </table></div></div>
-                                    <!--<div class="row">
-                                        <div class="col-sm-5">
-                                            <div aria-live="polite" role="status" id="DataTables_Table_1_info" class="dataTables_info">Showing 1 to 10 of 30 entries</div>
-                                        </div>
-                                        <div class="col-sm-7">
-                                            <div id="DataTables_Table_1_paginate" class="dataTables_paginate paging_simple_numbers">
-                                                <ul class="pagination pagination-separated">
-                                                    <li id="DataTables_Table_1_previous" class="paginate_button previous disabled"><a tabindex="0" data-dt-idx="0" aria-controls="DataTables_Table_1" href="#">Previous</a></li>
-                                                    <li class="paginate_button active">
-                                                        <a tabindex="0" data-dt-idx="1" aria-controls="DataTables_Table_1" href="#">1</a>
-                                                    </li>
-                                                    <li class="paginate_button ">
-                                                        <a tabindex="0" data-dt-idx="2" aria-controls="DataTables_Table_1" href="#">2</a>
-                                                    </li>
-                                                    <li class="paginate_button ">
-                                                        <a tabindex="0" data-dt-idx="3" aria-controls="DataTables_Table_1" href="#">3</a>
-                                                    </li><li id="DataTables_Table_1_next" class="paginate_button next"><a tabindex="0" data-dt-idx="4" aria-controls="DataTables_Table_1" href="#">Next</a></li></ul></div></div>
                                     
-                                    </div>-->
                                 <br/>
-                                <div class="row">
-                                     
-                                    
-                                   
-                                        <div class="col-md-12 text-right">
-                                            <a href="fc.html" class="btn btn-info ">Add Faculty Council</a>
-                                            
-                                           
-                                        </div>
-                                        
-                
-                                    </div>
+                              
                                     
                                 
                                 </div>
